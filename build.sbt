@@ -6,7 +6,7 @@ organization := "me.lessis"
 
 version <<= sbtVersion(v =>
   if (v.startsWith("0.11") || v.startsWith("0.12") || v.startsWith("0.13.5")) "0.1.3"
-  else error("unsupported sbt version %s" format v)
+  else "0.1.3" // error("unsupported sbt version %s" format v)
 )
 
 scalacOptions ++= Seq("-feature", "-deprecation")
